@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `ratings` ADD CONSTRAINT `ratings_userId_users_id_fk` FOREIGN KEY (`userId`) REFERENCES `users`(`id`) ON DELETE no action ON UPDATE no action;\nALTER TABLE `ratings` ADD CONSTRAINT `ratings_sakeRecordId_sake_records_id_fk` FOREIGN KEY (`sakeRecordId`) REFERENCES `sake_records`(`id`) ON DELETE no action ON UPDATE no action;\nALTER TABLE `sake_records` ADD CONSTRAINT `sake_records_userId_users_id_fk` FOREIGN KEY (`userId`) REFERENCES `users`(`id`) ON DELETE no action ON UPDATE no action;\nCREATE INDEX `userRecordIdx` ON `ratings` (`userId`,`sakeRecordId`);\nCREATE INDEX `userIdIdx` ON `sake_records` (`userId`)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43Kgc3T87o3MHR2.root --database gzh8FVJZ4JPtMZWqt6ZeGs --execute ALTER TABLE `ratings` ADD CONSTRAINT `ratings_userId_users_id_fk` FOREIGN KEY (`userId`) REFERENCES `users`(`id`) ON DELETE no action ON UPDATE no action;\nALTER TABLE `ratings` ADD CONSTRAINT `ratings_sakeRecordId_sake_records_id_fk` FOREIGN KEY (`sakeRecordId`) REFERENCES `sake_records`(`id`) ON DELETE no action ON UPDATE no action;\nALTER TABLE `sake_records` ADD CONSTRAINT `sake_records_userId_users_id_fk` FOREIGN KEY (`userId`) REFERENCES `users`(`id`) ON DELETE no action ON UPDATE no action;\nCREATE INDEX `userRecordIdx` ON `ratings` (`userId`,`sakeRecordId`);\nCREATE INDEX `userIdIdx` ON `sake_records` (`userId`)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 3899
+}

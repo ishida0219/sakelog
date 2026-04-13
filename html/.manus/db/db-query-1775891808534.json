@@ -1,0 +1,9 @@
+{
+  "query": "ALTER TABLE `users` ADD `nickname` varchar(64);\nALTER TABLE `users` ADD `gender` enum('male','female','other','prefer_not_to_say');\nALTER TABLE `users` ADD `ageGroup` enum('teens','twenties','thirties','forties','fifties','sixties_plus');\nALTER TABLE `users` ADD `prefecture` varchar(64);\nALTER TABLE `users` ADD `country` varchar(64) DEFAULT 'Japan';\nALTER TABLE `users` ADD `isPremium` boolean DEFAULT false NOT NULL",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43Kgc3T87o3MHR2.root --database gzh8FVJZ4JPtMZWqt6ZeGs --execute ALTER TABLE `users` ADD `nickname` varchar(64);\nALTER TABLE `users` ADD `gender` enum('male','female','other','prefer_not_to_say');\nALTER TABLE `users` ADD `ageGroup` enum('teens','twenties','thirties','forties','fifties','sixties_plus');\nALTER TABLE `users` ADD `prefecture` varchar(64);\nALTER TABLE `users` ADD `country` varchar(64) DEFAULT 'Japan';\nALTER TABLE `users` ADD `isPremium` boolean DEFAULT false NOT NULL",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 3763
+}

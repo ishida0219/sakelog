@@ -1,0 +1,9 @@
+{
+  "query": "CREATE TABLE `ratings` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`userId` int NOT NULL,\n\t`sakeRecordId` int NOT NULL,\n\t`sakeIndex` int NOT NULL DEFAULT 0,\n\t`stars` int,\n\t`drinkAgain` enum('yes','maybe','neutral','no'),\n\t`pairing` enum('fish','meat','cheese','japanese','solo'),\n\t`impression` enum('aroma','umami','finish','drinkability','surprise'),\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `ratings_id` PRIMARY KEY(`id`)\n)",
+  "command": "mysql --batch --raw --column-names --default-character-set=utf8mb4 --host gateway05.us-east-1.prod.aws.tidbcloud.com --port 4000 --user 43Kgc3T87o3MHR2.root --database gzh8FVJZ4JPtMZWqt6ZeGs --execute CREATE TABLE `ratings` (\n\t`id` int AUTO_INCREMENT NOT NULL,\n\t`userId` int NOT NULL,\n\t`sakeRecordId` int NOT NULL,\n\t`sakeIndex` int NOT NULL DEFAULT 0,\n\t`stars` int,\n\t`drinkAgain` enum('yes','maybe','neutral','no'),\n\t`pairing` enum('fish','meat','cheese','japanese','solo'),\n\t`impression` enum('aroma','umami','finish','drinkability','surprise'),\n\t`createdAt` timestamp NOT NULL DEFAULT (now()),\n\t`updatedAt` timestamp NOT NULL DEFAULT (now()) ON UPDATE CURRENT_TIMESTAMP,\n\tCONSTRAINT `ratings_id` PRIMARY KEY(`id`)\n)",
+  "rows": [],
+  "messages": [],
+  "stdout": "",
+  "stderr": "",
+  "execution_time_ms": 1865
+}

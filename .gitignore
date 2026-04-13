@@ -1,0 +1,23 @@
+*.mp4
+*.mov
+*.log
+*.zip
+*.pdf
+*.dmp
+*.ts
+*.m3u8
+*/usrimg/*
+/tmp/*
+/test/*
+/sample/*
+/html/usrimg/*
+/usrdata/*
+/script/logs/*
+.env
+.htpasswd
+
+
+# *.jpeg
+# *.gif
+# *.png
+# *.jpg
